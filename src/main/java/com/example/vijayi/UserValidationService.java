@@ -20,7 +20,7 @@ public class UserValidationService
 
     public static Boolean containsSpecialCharacter(String name)
     {
-        Pattern pattern = Pattern.compile("[a-zA-Z@#$%!]+");
+        Pattern pattern = Pattern.compile("^[a-zA-Z]+$");
 
         Matcher matcher = pattern.matcher(name);
 
